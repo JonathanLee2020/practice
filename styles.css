@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+section {
+    background-color: lightgreen;
+    transition: all 300ms ease;
+}
+
+#landing-page {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.container {
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: center; */
+    margin: 0 auto;
+    background-color: rgb(80, 198, 219);
+    transition: all 300ms ease;
+    position: relative;
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.header__links {
+    display: flex;
+}
+
+.header__link {
+    padding: 0 6px;
+}
+
+button {
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: center;
+    margin-left: 12px;
+    padding: 0;
+    background-color: rgb(139, 139, 210);
+    
+}
+
+.click {
+    cursor: pointer;
+}
+
+.conquerors {
+    margin: 0 !important;
+}
+
+
+
+.open__menu {
+    /* padding: 0; */
+    transition: all 300ms ease;
+}
+
+.menu__backdrop {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+
+
+.menu__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 4px 6px;
+}
+
+.open--menu .menu__backdrop  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dark-mode section {
+    background: black;
+    transition: all 300ms ease;
+}
+
+.dark-mode h2,
+.dark-mode button,
+.dark-mode .header__link {
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: navy;
+}
+
+.dark-mode button {
+    background-color: purple;
+}
+
+/* MODAL */
+
+.modal {
+    background-color: lightseagreen;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 300ms ease;
+
+    
+}
+.modal__half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+
+.modalOpen .modal {
+    visibility: visible;
+    opacity: 1;
+    width: 80%;
+    height: 700px;
+}
+
+.modalOpen header {
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+.modal__left {
+    background-color: #4FFFB0;
+}
+
+.highlight {
+    color: black;
+}
+
+.exit {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.modal__text {
+    width: 80%;
+    transition: all 300ms ease;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .isDark .title,
+.isDark .header__title,
+.isDark .header__link {
+    color: white;
+}
+
+.isDark .container  {
+    color: blue;
+    background-color: blue;
+} 
+
+.isDark button {
+    background-color: black;
+}
+
+.isDark h2 {
+    color: white;
+}
+
+/* .isDark #landing-page {
+    background-color: black;
+} */
+
+
+
+
+
+.dark-mode {
+    background: black; 
+    transition: all 300ms ease;
+}
+
+.isDark 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
