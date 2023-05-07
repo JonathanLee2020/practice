@@ -47,8 +47,11 @@ function toggleModal() {
         isModalOpen = !isModalOpen;
         console.log("our modal is now open")
     } else {
-        document.body.classList.remove("modalOpen");
+        // Delay the removal of the modalOpen class by 50ms
+        setTimeout(function() {
+            document.body.classList.remove("modalOpen");
+        }, 10);
         isModalOpen = !isModalOpen;
-        console.log("our modal is now closed")
+        console.log("our modal is now closed");
     }
 }
