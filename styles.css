@@ -291,4 +291,29 @@ img {
 
 #second {
     background-color: bisque;
+
+
 }
+
+@keyframes showContent {
+    0% {
+      opacity: 0; /* Initially, set the opacity to 0 */
+    }
+    100% {
+      opacity: 1; /* After the animation, set the opacity to 1 */
+    }
+  }
+  
+  /* Apply the animation to the element */
+   .loading-page {
+    animation-name: showContent; /* Name of the animation */
+    animation-duration: 1s; /* Duration of the animation */
+    animation-delay: 5s; /* Delay before the animation starts */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    
+  }
